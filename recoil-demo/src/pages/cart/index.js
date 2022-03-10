@@ -1,3 +1,10 @@
+/*
+ * @Description: 主页
+ * @Author: Jack Chen @懒人码农
+ * @Date: 2022-03-10 09:38:32
+ * @LastEditors: Jack Chen
+ * @LastEditTime: 2022-03-10 10:38:36
+ */
 import React from "react";
 import { Card, Col, Row, Button } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
@@ -25,7 +32,7 @@ const products = [
   {
     key: 4,
     id: 4,
-    bookName: "JS DOM编程艺术",
+    bookName: "JSDOM编程艺术",
     unitPrice: 79,
   },
   {

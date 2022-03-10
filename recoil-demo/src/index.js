@@ -1,9 +1,16 @@
+/*
+ * @Description: 程序入口文件
+ * @Author: Jack Chen @懒人码农
+ * @Date: 2022-03-10 09:38:32
+ * @LastEditors: Jack Chen
+ * @LastEditTime: 2022-03-10 10:37:28
+ */
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.less";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import "./index.less";
 
 ReactDOM.render(
   // <React.StrictMode>

@@ -1,6 +1,14 @@
+/*
+ * @Description: 自定义Hooks
+ * @Author: Jack Chen @懒人码农
+ * @Date: 2022-03-10 09:38:32
+ * @LastEditors: Jack Chen
+ * @LastEditTime: 2022-03-10 16:04:48
+ */
 import { useRecoilState } from "recoil";
 import { cart } from "./atoms";
 
+// 拷贝新数据，获取满足条件的索引
 const cloneIndex = (items, id) => ({
   clone: items.map((item) => ({
     ...item,
@@ -11,9 +19,11 @@ const cloneIndex = (items, id) => ({
 // 加量
 export const useIncrementItem = () => {
   const [items, setItems] = useRecoilState(cart);
+  console.log('cart=', items)
 
   return (product) => {
     const { clone, index } = cloneIndex(items, product.id);
+    console.log('clone=', clone, product)
 
     if (index !== -1) {
       clone[index].amount += 1;
@@ -27,7 +37,6 @@ export const useIncrementItem = () => {
 // 减量
 export const useDecrementItem = () => {
   const [items, setItems] = useRecoilState(cart);
-  const removeItem = useRemoveItem();
 
   return (product) => {
     const { clone, index } = cloneIndex(items, product.id);
@@ -35,8 +44,6 @@ export const useDecrementItem = () => {
     if (clone[index].amount !== 1) {
       clone[index].amount -= 1;
       setItems(clone);
-    } else {
-      // removeItem(product);
     }
   }
 }

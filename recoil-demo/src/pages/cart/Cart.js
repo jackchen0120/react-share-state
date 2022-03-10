@@ -1,5 +1,12 @@
+/*
+ * @Description: 购物车列表
+ * @Author: Jack Chen @懒人码农
+ * @Date: 2022-03-10 09:38:32
+ * @LastEditors: Jack Chen
+ * @LastEditTime: 2022-03-10 10:23:06
+ */
 import React from "react";
-import { Table, Space } from "antd";
+import { Table } from "antd";
 import CartButtons from "./CartButtons";
 import { useRecoilValue } from "recoil";
 import { cart, cartState } from "../../store";
