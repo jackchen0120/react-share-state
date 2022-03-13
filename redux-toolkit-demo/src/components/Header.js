@@ -5,6 +5,7 @@
  * @LastEditors: Jack Chen
  * @LastEditTime: 2022-03-11 16:37:19
  */
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Button, Badge } from "antd";
@@ -13,7 +14,6 @@ import { useSelector } from "react-redux";
 
 function Header() {
   const { totalCartNum } = useSelector((state) => state.cart);
-  // console.log('totalCartNum===', totalCartNum);
 
   return (
     <div className="header">

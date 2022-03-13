@@ -9,7 +9,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "./cartSlice";
 
-// configureStore创建一个redux数据
+// configureStore 创建一个 redux 数据
 export const store = configureStore({
   reducer: {
     cart: cartReducer,
