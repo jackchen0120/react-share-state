@@ -5,7 +5,7 @@
  * @LastEditors: Jack Chen
  * @LastEditTime: 2022-03-10 10:36:24
  */
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 
 import Header from "./components/Header"; // 头部组件
@@ -16,16 +16,20 @@ import "./App.less"; // 公共样式
 
 function App() {
   return (
-    <div className="App">
-      <RecoilRoot>
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Catalog />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-        <Footer />
-      </RecoilRoot>
-    </div>
+    <>
+      <Router>
+        <div className="App">
+          <RecoilRoot>
+            <Header />
+            <Routes>
+              <Route exact path="/" element={<Catalog />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+            <Footer />
+          </RecoilRoot>
+        </div>
+      </Router>
+    </>
   );
 }
 

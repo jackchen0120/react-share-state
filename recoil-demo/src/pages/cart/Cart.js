@@ -66,6 +66,7 @@ function Cart() {
       <Table
         columns={columns}
         dataSource={tableData}
+        pagination={{ hideOnSinglePage: true }}
         size="middle"
         footer={footerDom}
       />
