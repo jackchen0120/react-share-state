@@ -1,0 +1,101 @@
+@import '~antd/dist/antd.less';
+
+.App {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  .title {
+    font-size: 16px;
+    color: #1890ff;
+    font-weight: bold;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ant-card-body {
+  padding: 12px 8px;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+}
+
+.card-list {
+  .card {
+    margin-bottom: 15px;
+    margin-right: 8px;
+    .item {
+      display: block;
+      &:nth-child(1) {
+        font-weight: bold;
+      }
+      &:nth-child(2) {
+        padding-bottom: 10px;
+        em {
+          .price();
+        }
+      }
+    }
+  }
+  &:nth-of-type(3n) {
+    .card {
+      margin-right: 0;
+    }
+  }
+}
+
+.total {
+  font-size: 18px;
+  .price();
+}

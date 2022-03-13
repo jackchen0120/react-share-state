@@ -8,22 +8,21 @@
 import { useRecoilState } from "recoil";
 import { cart } from "./atoms";
 
-// 拷贝新数据，获取满足条件的索引
 const cloneIndex = (items, id) => ({
   clone: items.map((item) => ({
     ...item,
-  })),
-  index: items.findIndex((item) => item.id === id),
+  })), // 拷贝原数据
+  index: items.findIndex((item) => item.id === id), // 获取满足条件的索引位置
 });
 
-// 加量
+// 递增
 export const useIncrementItem = () => {
   const [items, setItems] = useRecoilState(cart);
-  console.log('cart=', items)
+  console.log('cartList===', items)
 
   return (product) => {
     const { clone, index } = cloneIndex(items, product.id);
-    console.log('clone=', clone, product)
+    console.log('clone===', clone, product)
 
     if (index !== -1) {
       clone[index].amount += 1;
@@ -34,7 +33,7 @@ export const useIncrementItem = () => {
   };
 };
 
-// 减量
+// 递减
 export const useDecrementItem = () => {
   const [items, setItems] = useRecoilState(cart);
 
