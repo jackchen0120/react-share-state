@@ -12,7 +12,7 @@
 
 # 演示效果图
 
-![https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10b3e3dc413e404fb5e891026f346b0d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp?](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10b3e3dc413e404fb5e891026f346b0d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp?)
+<img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10b3e3dc413e404fb5e891026f346b0d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp?" width="900" alt="效果图" />
 
 # 功能清单
 
