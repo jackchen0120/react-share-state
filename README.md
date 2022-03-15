@@ -12,7 +12,7 @@
 
 # 演示效果图
 
-<img src="https://github.com/jackchen0120/react-share-state/blob/main/recoil.gif" width="900" alt="效果图" />
+<img src="https://github.com/jackchen0120/react-share-state/blob/main/recoil.gif" width="416" alt="效果图" />
 
 # 功能清单
 
